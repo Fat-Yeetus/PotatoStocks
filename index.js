@@ -38,4 +38,4 @@ evtFiles.forEach(file => {
 
 client.login(client.config.token);
 
-process.on("unhandledRejection", err => client.logger.log(err.stack, "error"));
+process.on("unhandledRejection", client.error);
