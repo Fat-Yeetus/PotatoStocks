@@ -84,8 +84,7 @@ module.exports = class {
 			if (cmd) await cmd.run(message, args, data);
 		} catch (e) {
 			console.error(e);
-			return message.channel
-				.send("An unexpected error has occured");
+			return message.channel.send("An unexpected error has occured");
 		}
 	}
 };
